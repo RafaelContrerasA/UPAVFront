@@ -1,0 +1,26 @@
+.login {
+  background-image: url(/img_login.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.txt {
+  color: var(--Blanco, #fff);
+  text-shadow:
+    -1px -1px 0 var(--Vino, #4a001f),
+    1px -1px 0 var(--Vino, #4a001f),
+    -1px 1px 0 var(--Vino, #4a001f),
+    1px 1px 0 var(--Vino, #4a001f);
+  font-family: Gibson;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+
+  &:hover {
+    -webkit-animation-delay: 3ms;
+    animation-delay: 1ms;
+    scale: 110%;
+  }
+}

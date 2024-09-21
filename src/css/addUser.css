@@ -1,0 +1,139 @@
+/* AddUserForm.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    width: 98%;
+    /* Ajustar el ancho al 100% para llenar el contenedor */
+    position: relative;
+    margin-bottom: 20px;
+    flex: 1;
+    margin-right: 30px;
+}
+
+.input-group select[name="tipoUsuario"] {
+    background-color: #4A001F;
+    color: #FFFFFF;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border: 1px solid #4A001F;
+}
+
+.input-group:last-child {
+    margin-right: 20px;
+}
+
+.register-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6A0F49;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.register-button:hover {
+    opacity: 0.8;
+
+}
+
+.error-message {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    color: red;
+    font-size: 12px;
+}
+
+.input-error input,
+.input-error select {
+    border-color: #6A0F49;
+}
+
+.arrow-container {
+
+    position: absolute;
+    top: 120px;
+    left: 50px;
+
+}
+
+.arrow-icon {
+    font-size: 90px;
+    /* Tamaño del ícono */
+    color: #4A001F;
+    /* Color del ícono */
+    transition: transform 0.2s ease;
+    /* Transición suave en la propiedad transform */
+    cursor: pointer;
+    /* Cambiar el cursor a pointer cuando se pasa el mouse sobre el ícono */
+}
+
+.arrow-icon:hover {
+    transform: scale(1.1);
+    /* Escalar el ícono al 110% cuando se pase el mouse sobre él */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 900px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .form-row {
+        flex-direction: column;
+
+    }
+
+    .input-group {
+        width: 100%;
+
+    }
+
+    .title-box h2 {
+        font-size: 24px;
+    }
+
+    .back-button {
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+        background-color: #f0f0f0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .back-button span {
+        margin-left: 5px;
+        font-size: 0.9rem;
+        color: #333;
+    }
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Un Post A la Vez</title>
+    <style>
+      :root {
+        --favicon-color: #4A001F;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --favicon-color: #ffffff;
+        }
+      }
+    </style>
+    <script>
+      window.addEventListener('DOMContentLoaded', async (event) => {
+        const faviconColor = getComputedStyle(document.documentElement).getPropertyValue('--favicon-color').trim();
+
+        // Cargar el contenido del SVG
+        const response = await fetch('/public/logo.svg');
+        let svgContent = await response.text();
+
+        // Modificar el color del SVG
+        svgContent = svgContent.replace('fill="none"', `fill="${faviconColor}"`);
+
+        // Crear un blob y URL para el nuevo SVG
+        const svgBlob = new Blob([svgContent], { type: 'image/svg+xml' });
+        const url = URL.createObjectURL(svgBlob);
+        
+        // Crear y agregar el elemento de favicon
+        let link = document.getElementById('favicon');
+        if (!link) {
+          link = document.createElement('link');
+          link.id = 'favicon';
+          link.rel = 'icon';
+          document.head.appendChild(link);
+        }
+        link.href = url;
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

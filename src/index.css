@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-BookItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-SemiBoldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-Thin.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-ThinItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+html {
+  font-family: 'Gibson';
+  src: url('/fonts/Gibson-ThinItalic.otf') format('opentype');
+}
